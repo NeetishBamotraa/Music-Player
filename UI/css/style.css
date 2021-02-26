@@ -1,0 +1,204 @@
+
+	
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body
+{
+	background-color: rgba(0,0,0,0.9);
+	
+}
+
+#sidebar
+{
+	background-color: rgba(0,0,0,0.4); 
+	width: 50px; 
+	height:100vh;
+	display: block;
+	padding:3px 5px;
+	box-shadow: 2px 0px 6px -2px rgba(22.4, 100, 7.8,0.8);
+	transition: 0.8s;
+
+}
+
+
+#sidebar > .sideoptions > a
+{
+	background-color: #39FF14;
+	border-radius: 40px;
+	height: 40px;
+	width: 100%;
+	margin:10px 0;
+	float: left;
+	text-decoration: none;
+}
+
+
+#sidebar > .menubutton
+{
+	margin:15px 0;
+	background-color: transparent;
+}
+
+.bar1, .bar2, .bar3
+{
+	width: 40px;
+	height:4px;
+	background-color: rgba(22.4, 100, 7.8,1);
+	transition: 0.5s;
+	margin: 6px 0;
+	z-index: 4;
+}
+
+.change .bar1 {
+   transform: rotate(-45deg) ;
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+#opt1, #opt2, #opt3, #opt4
+{
+	cursor:pointer;
+}
+
+#opt1 > .addbar1
+{
+	width:8px;
+	height:30px;
+	margin:5px 0;
+    transform: translateX(16px);
+	background-color:rgba(0,0,0,1);
+	border-radius: 6px;
+}
+
+#opt1 > .addbar2
+{
+	width:30px;
+	height:8px;
+	margin:0 5px;
+    transform: translateY(-24px);
+	background-color:rgba(0,0,0,1);
+	border-radius: 6px;
+}
+
+
+@keyframes menu
+{
+	from { left:0px; opacity: 0; }
+	to { left:70px; opacity: 1; }
+}
+
+.optiontitle
+{
+	position: relative;
+	text-align: right;
+	color: white;
+	display: none;
+	font-size: 20px;
+	color: black;
+}
+
+#opt2 > .addbar3
+{
+	width:30px;
+	height:4px;
+	margin:0 5px;
+	background-color:rgba(0,0,0,1);
+	border-radius: 6px;
+}
+
+
+.setting
+{
+  height:40px;
+  width: 40px;
+  position: relative;
+  top:0;
+  left:0;
+}
+
+.settingcircle
+{
+  background-color: #39FF14;
+  border-radius: 100%;
+  border: 6px solid black;
+  height:25px;
+  width: 25px;
+  margin:7.5px;
+  position: absolute;
+  z-index: 3;
+}
+
+.settingbars
+{
+  width:90%;
+  height:6px;
+  background-color: black;
+  border-radius:10px;
+  position: absolute;
+  z-index: 2;
+  margin-left:2px;
+}
+
+#mainarea
+{
+	color: black;
+	position: absolute;
+	top: 0;
+	left:50px;
+	width: calc(100% - 50px);
+	height: 100vh;
+	transition: 0.8s;
+	background-color: transparent;
+}
+
+#mainarea > iframe
+{
+	width: 100%;
+	height:100vh;
+	position: relative;
+	border:none;
+}
+
+
+.home_icon
+{
+	position: relative;
+}
+.home_icon > .home_triangle
+{
+	width:0;
+	height:0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 10px solid black;  /*39FF14*/
+	margin: 2px 5px;
+}
+
+.home_icon > .home_box
+{
+	width:20px;
+	height:20px;
+	background-color: black;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+.home_icon > .home_box1
+{
+	width:10px;
+	height:10px;
+	background-color: #39FF14;
+	position: absolute;
+	top: 18px;
+	left: 15px;
+}

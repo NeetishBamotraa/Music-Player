@@ -1,0 +1,90 @@
+*
+{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	cursor: default;
+}
+
+.songbar
+{
+    height: 20px;
+    position: relative;
+    top: 0;
+    left: 5px;
+    width: calc(100% - 10px);
+    overflow: hidden;
+    border-bottom:2px solid #39FF14 ;
+}
+
+.songbar > #songbartext
+{
+	animation: song_bar_anim 10s linear infinite;
+	color:#39FF14;
+}
+
+@keyframes song_bar_anim
+{
+	from{transform: translateX( 100% );}
+	to{transform: translateX( -100% );}
+}
+
+#title
+{
+	position: absolute;
+	top: 60px;
+	left: 50%;
+	transform:translateX(-50%);
+	font-size: 40px;
+	color:#39ff14;
+}
+
+#addfromfile
+{
+	position: absolute;
+	top: 130px;
+	left:30%;
+	transform: translateX(-50%);
+	width: 250px;
+	height: 90px;
+	background-color: #39ff14;
+	border-radius: 50px;
+}
+
+#addfromyoutube
+{
+	position: absolute;
+	top: 130px;
+	left:70%;
+	transform: translateX(-50%);
+	width: 250px;
+	height: 90px;
+	background-color: #39ff14;
+	border-radius: 50px;
+}
+
+#addfromfile > div
+{
+	font-size: 1.4em;
+	font-weight: 650;
+	position: relative;
+	text-align: center;
+	top: 30%;
+}
+
+#addfromyoutube > div
+{
+	font-size: 1.4em;
+	font-weight: 650;
+	position: relative;
+	text-align: center;
+	top: 30%;
+}
+
+#addfromfile:hover, #addfromyoutube:hover
+{
+	box-shadow: 0 0 5px #39ff14;
+	color: #39ff14;
+	background-color: transparent;
+	transition: 0.6s;
+}
