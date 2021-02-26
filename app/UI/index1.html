@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Music Player</title>	
+	<script type="text/javascript" src="/eel.js"></script>
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="scripts/script.js"></script>
+</head>
+
+
+
+
+<body>
+
+	<div id="sidebar">
+
+		<div class="menubutton"  onclick="Menu(this)">
+			<div class="bar1"></div>
+				<span id="menu" 
+				style="
+
+				top:12px;
+				display: none;
+				 font-size:30px;
+				  color: white;
+			     position: absolute;
+			     animation: menu 0.5s linear forwards;
+			     ">
+
+			 		Menu
+
+			 	</span>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+		</div>
+
+		<div class="sideoptions">
+			
+
+			<a onclick="loadOptions(1)" id="opt1">	
+
+				<div class="addbar1"></div>
+				<div class="addbar2"></div>
+
+				<div class="optiontitle" 
+				  style="top: -40px; right: 10px;">
+					Add song
+				</div>
+				
+
+			</a>
+
+			<a onclick="loadOptions(4)" id="opt4">
+
+				<div class="home_icon">
+
+					<div class="home_triangle"></div>
+					<div class="home_box"></div>
+					<div class="home_box1"></div>
+
+				</div>	
+
+				<div class="optiontitle" 
+				style="top: -5px; right: 10px;">
+					Home
+				</div>
+
+			</a>
+
+		</div>
+	</div>
+
+	<div id="mainarea"><!--edited -->
+
+		<iframe src="default.html" id="main_area"></iframe>
+
+	</div>
+
+</body>
+
+
+
+
+
