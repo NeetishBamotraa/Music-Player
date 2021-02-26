@@ -72,10 +72,12 @@ It comes pre-installed with the standard installation of Python.
 3.1 Overview of the system
 The system consists of a backend end side and a front side. The backend side is written in Python and is saved in “main.py’ file. This file contains the driver code of the application and handles the execution of the application through the methods defined in it. The front end is written in JavaScript, HTML and CSS. All the front-end files are collectively saved in “UI” folder in the root directory of the project. 
 
-App Directory Information:
+* App Directory Information:
 
 ![image1](/images/1.JPG)
-App Driving Files and their functions:
+
+
+* App Driving Files and their functions:
 
 ![image2](/images/2.JPG)
 
@@ -86,10 +88,10 @@ App Driving Files and their functions:
 
  
 3.2 Flow of control of App:
-Initial State:
+* Initial State:
 ![image3](/images/3.JPG)
 
-When Add Songs Button is Clicked:
+* When Add Songs Button is Clicked:
 ![image4](/images/4.JPG)
 
 
