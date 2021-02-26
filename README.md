@@ -74,10 +74,10 @@ The system consists of a backend end side and a front side. The backend side is 
 
 App Directory Information:
 
-![image1](/images/1.jpg)
+![image1](/images/1.JPG)
 App Driving Files and their functions:
 
-![image2](/images/2.jpg)
+![image2](/images/2.JPG)
 
 
 
@@ -87,10 +87,10 @@ App Driving Files and their functions:
  
 3.2 Flow of control of App:
 Initial State:
-![image3](/images/3.jpg)
+![image3](/images/3.JPG)
 
 When Add Songs Button is Clicked:
-![image4](/images/4.jpg)
+![image4](/images/4.JPG)
 
 
 
@@ -110,7 +110,7 @@ When Add Songs Button is Clicked:
 
 3.3 Data Flow Diagram:
 
-![image5](/images/5.jpg)
+![image5](/images/5.JPG)
  
 
 
