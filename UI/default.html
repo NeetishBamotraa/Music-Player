@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<head>
+	<script src="scripts/default.js"></script>
+	<script type="text/javascript" src="/eel.js"></script>
+	<link rel="stylesheet" href="css/default.css">
+</head>
+
+<body>
+	<div class="songbar">
+		<div id="songbartext">No song is selected!
+		</div>
+	</div>
+
+	<div class="contentarea">
+		<div class="listarea">
+			<div style="color: #39ff14; font-size: 2em; text-shadow:0 3px 12px #39ff14;">Current Playlist:</div>
+
+			<div class="delete" onclick="deletebutton()">
+				<div class="delete_box1"></div>
+				<div class="delete_box2"></div>
+				<div class="delete_box3"></div>
+			</div>
+
+			<div class="select_all" onclick="select_all()">
+			</div>
+
+			<ul id="list">
+		
+			</ul>
+		</div>
+
+		<div class="musicarea">
+			
+			<div  class="musicicon">
+				<div class="ring" style="width: 100px; height: 100px; "></div>
+				<div class="ring" style="width: 90px; height: 90px; animation-duration:4s;"></div>
+				<div class="ring" style="width: 80px; height: 80px; animation-duration: 3s; "></div>
+				<div class="ring" style="width: 70px; height: 70px; animation-duration: 2s;"></div>
+				<div class="ring" style="width: 60px; height: 60px; animation-duration: 1s;"></div>
+			</div>
+
+			<div id="barcontainer">
+				<input type="range" id="progressbar" value="0" min="0" max="100" step="1" />
+			</div>
+
+			<div class="buttonarea">
+				<div id="playbutton" onclick="playbutton()">
+					<div></div>
+					<div></div>
+				</div>
+				<div id="volume" onclick="volume()">
+						<div></div>
+						<div></div>
+						<div></div>
+				</div>
+				<div id="repeat" onclick="repeat()">
+					<div></div>
+					<div></div>
+					<div id="repeattext"></div>
+				</div>
+				<div id="nextsong" onclick="nextsong()">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+				<div id="prevsong" onclick="prevsong()">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+
+			<div id="volslider">
+					<input type="range" id="volbar" value="50" min="0" max="100" step="1" />
+			</div>
+
+			<div id="curtime">00:00</div>
+			<div id="totaltime">00:00</div>
+		</div>
+	</div>
+
+	
+</body>
